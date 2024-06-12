@@ -129,9 +129,8 @@ where cli.nombre= "Juan Perez";
 
             select mensaje;
         end$$
-    call AgregarCliente("Esteban Alonzo", "estebitan83@gmail.com","3332123");
-
     delimiter ;
+    call AgregarCliente("Esteban Alonzo", "estebitan83@gmail.com","3332123");
     ```
 
 2. Enunciado: Crea un procedimiento almacenado llamado ObtenerDetallesPedido que reciba como parámetro el ID del pedido y devuelva los detalles del pedido, incluyendo el nombre del menú, cantidad y precio unitario.
