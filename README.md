@@ -207,7 +207,7 @@ delimiter $$
 
         select mensaje;
     end$$
-delimiter;
+delimiter ;
 
 call EliminarCliente(2);
 ``` 
