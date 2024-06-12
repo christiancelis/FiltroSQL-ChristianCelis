@@ -230,7 +230,7 @@ delimiter $$
         
     end$$
 delimiter ;
-call TotalGastadoPorCliente(2);
+call TotalGastadoPorCliente(3);
 
 
 
