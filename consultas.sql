@@ -212,14 +212,14 @@ delimiter $$
         end if;
 
         select mensaje;
-    end;
+    end$$
 delimiter;
 
 call EliminarCliente(2);
 
 -- Enunciado: Crea un procedimiento almacenado llamado TotalGastadoPorCliente que reciba
 -- como parámetro el ID del cliente y devuelva el total gastado por ese cliente en todos sus pedidos.
-delimiter $
+delimiter $$
     create procedure TotalGastadoPorCliente(in idCliente int)
     begin
         select cli.nombre as Nombre,sum(pd.total) as "Total Gastado"
@@ -228,7 +228,7 @@ delimiter $
         where cli.id= idCliente
         group by cli.nombre;
         
-    end;
+    end$$
 delimiter ;
 call TotalGastadoPorCliente(2);
 
